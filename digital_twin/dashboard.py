@@ -75,8 +75,6 @@ else:
     with col4: st.metric("Health Score", "STANDBY")
     st.info("System in STANDBY mode. Visualizer is idling.")
 
-    st.info("System in STANDBY mode. Visualizer is idling.")
-
 # History is available via expander
 with st.expander("📝 View Telemetry History"):
     st.dataframe(st.session_state.engine.history.iloc[::-1], use_container_width=True)
